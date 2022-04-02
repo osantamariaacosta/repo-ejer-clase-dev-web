@@ -17,9 +17,11 @@ btn.addEventListener('click', changeActive);
 
 function changeActive() {
   let paragraphListText = document.getElementsByClassName('g-text');
-  for (let i = 1; i <= paragraphListText.length; i++) {
-    // se ejecuta lo que está dentro de este bloque siempre y cuando index sea menor al tamaño de la lista
-    console.log('indice', i);
-    console.log('elemento', paragraphListText[i]);
+  for (let i = 0; i < paragraphListText.length; i++) {
+    if (paragraphListText[i].classList.contains('active')) {
+      paragraphListText[i].classList.remove('active');
+    } else {
+      paragraphListText[i].classList.add('active');
+    }
   }
 }
