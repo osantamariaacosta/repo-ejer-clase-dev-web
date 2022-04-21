@@ -17,3 +17,24 @@ body
   color: $main-color
   @extend %general-text
   @extend .general-text
+
+.mixin-container 
+  background-color: #dfe4ea
+  padding: 20px 30px
+  margin: 30px
+
+.content 
+  padding: 20px
+  background-color: #ced6e0
+
+.main-content h2
+  @include text($dark-gray, Helvetica , 22px)
+
+.main-content p
+  @include text($light-gray, monospace , 16px)
+
+.content .btn-send
+  @include btn($main-color, #fff, 140px)
+
+.content .btn-cancel
+  @include btn($danger-color, #fff, 140px)
