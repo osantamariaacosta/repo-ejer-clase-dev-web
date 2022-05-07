@@ -1,4 +1,4 @@
-let valid = true;
+var valid = true;
 let inputList = document.querySelectorAll('input');
 let textArea = document.getElementById('description');
 
